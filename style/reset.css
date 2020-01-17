@@ -1,0 +1,24 @@
+/* Box sizing rules */
+/* Box sizingの定義 */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Remove default margin */
+/* デフォルトのmarginを削除 */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+hr
+{
+    margin: 0;
+    padding: 0;
+}
+
+
