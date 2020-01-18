@@ -1,11 +1,13 @@
 
 
 .container {
-    padding: 0 100px;
     margin: 0;
     width: 100%;
     font-family: 'YuGothic';
     color: #333333;
+}
+a {
+    list-style: none;
 }
 
 header {
@@ -14,17 +16,13 @@ header {
     margin-top: 18px;
 
 }
-.logo img{
-    width: 130px;
-    height: 33px;
-}
+
 /* 共有しているclass */
 .btn {
     border-radius: 30px;
 }
 .btn1 {
-    width: 151px;
-    font-size: 18px;
+    
     background-color: #FFE000;
     border: none;
 }
@@ -59,10 +57,7 @@ header {
 .btn6 {
     background-color: #fff;
     color: #109954;
-    width: 106px;
-    height: 26px;
     border: 2px solid #109954;
-    font-size: 14px;
     font-weight: bold;
 }
 .btn7 {
@@ -167,7 +162,7 @@ header {
     margin-bottom: 30px;
 }
 
-.about-txt h2 {
+.about-txt h3 {
     color: #109954;
     margin-bottom: 30px;
 }
@@ -183,12 +178,20 @@ header {
 
 article {
     display: flex;
+    position:relative;
+}
+article .link {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 hr {
     margin: 30px 0;
 }
-
 
 .blog-date {
     display: flex;
@@ -200,6 +203,7 @@ time {
     font-size: 16px;
     margin-right: 24px;
 }
+
 
 figure img{ 
     width: 64%;
@@ -269,14 +273,177 @@ small {
 
 /* resposible */
 
-@media (max-width: 425px) {
+
+@media screen and (max-width: 2560px) {
+
+    .container {
+        padding: 0 200px;
+    }
+
+    header {
+        margin-top: 55px;
+    }
+    .logo img {
+        width: 300px;
+        height: 50px;
+    }
+    .btn1 {
+        width: 300px;
+        height: 60px;
+    }
+    .mv {
+        padding: 0 200px;
+    }
+    .mv-left h2 {
+        font-size: 56px;
+    }
+    .mv-left p{
+        font-size: 24px;
+        width: 700px;
+    }
+
+    .mv img {
+        width: 54%;
+    }
+
+    .section-ttl:before, .section-ttl:after {
+        width: 705px;
+    }
+    .service-inner img {
+        width: 380px;
+    }
+    .service-inner p {
+        font-size: 30px;
+    }
+
+    .about-inner p {
+        width: 800px;
+        font-size: 30px;
+    }
+    .about-inner img {
+        width: 47%;
+    }
+    .about-txt h3 {
+        font-size: 50px;
+    }
+    .btn4, .btn5 {
+        width: 163px;
+        font-size: 28px;
+        height: 62px;
+    }
+    figure img {
+        width: 100%;
+    }
+    time {
+        font-size: 30px;
+    }
+    .btn6 {
+        font-size: 30px;
+        width: 206px;
+        height: 46px;
+    }
+    .blog-txt h2 {
+        font-size: 35px;
+    }
+    .blog-txt p {
+        font-size: 30px;
+    }
+    footer {
+        height: 250px;
+    }
+    .footer-logo img{
+        width: 100px;
+    }
+    .footer-logo a {
+        font-size: 20px;
+    }
+
+}
+
+@media screen and (max-width: 1440px) {
+    .container {
+        padding: 0 100px;
+    }
+
+    .logo img{
+        width: 130px;
+        height: 33px;
+    }
+    .btn1 {
+        width: 151px;
+    font-size: 18px;
+    }
+    .btn6 {
+        width: 106px;
+        height: 26px;
+        font-size: 14px;
+    }
+
+}
+
+
+
+@media screen and (max-width: 1024px) {
+    .container {
+        padding: 0 50px;
+    }
+
+    .inner {
+        width: 900px;
+    }
+    .heading {
+        text-align: center;
+        padding: 0;
+    }
+    .heading h2 {
+        text-align: center;
+    }
+    .service-inner {
+        width: 900px;
+        padding: 0 100px;
+    }
+    .abput-upper,.about-bottom {
+        margin: 0 40px 100px 40px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 0 20px;
+    }
+    .inner {
+        width: 700px;
+    }
+    .section-ttl{
+        font-size: 30px;
+    }
+    .service-inner {
+        width: 700px;
+        padding: 0;
+    }
+    .service-inner img {
+        width: 180px;
+    }
+    .about-txt p {
+        width: 311px;
+    }
+    figure img {
+        width: 100%;
+    }
+    .footer-logo {
+        padding: 0px 16px;
+    }
+
+
+}
+
+@media screen and (max-width: 375px) {
 
     .container {
         padding: 0 15px;
     }
-    .inner {
-        width: 350px;
-    }
+
     .logo img{
         width: 110px;
         height: 28px;
@@ -320,12 +487,12 @@ small {
         margin: 0 15px;
     }
     .service-inner {
-        display: inline-flex;
         flex-direction: column;
         text-align: center;
-        width: 300px;
         padding: 0 5px;
+        width: 370px;
     }
+    
 
     .service-inner img {
         width: 200px;
@@ -347,8 +514,12 @@ small {
         margin: 0 0 30px 0;
         text-align: center;
     }
-    .about-txt h2 {
+    .about-txt h3 {
         text-align: left;
+        font-size: 32px;
+    }
+    .about-txt p {
+        width: 345px;
     }
 
     .news-inner {
@@ -370,53 +541,38 @@ small {
     .btn6 {
         width: 100px;
     }
-    
-    
-}
+    .btn7 {
+        width: 266px;
+        height: 78px;
+    }
 
-
-@media (max-width: 768px) {
-    .container {
-        padding: 0 20px;
+    footer {
+        height: 289px;
     }
-    .inner {
-        width: 700px;
+    .footer-logo {
+        display: block;
+        flex-direction: column;
+        padding: 0;
+        text-align: center;
+        
     }
-    .section-ttl{
-        font-size: 30px;
+    .footer-logo img {
+        margin-bottom: 23px;
     }
-    .service-inner {
-        width: 700px;
+    
+    ul {
+        display: block;
+        flex-direction: column;
+        margin: 0;
         padding: 0;
     }
-    .service-inner img {
-        width: 180px;
-    }
-    .about-txt p {
-        width: 311px;
-    }
+    li {
+        margin: 0 0 12px 0;
 
-
-}
-
-
-@media (max-width: 1024px) {
-    .container {
-        padding: 0 50px;
     }
-
-    .inner {
-        width: 900px;
+    li + li{
+        border: none; 
     }
-    .heading {
-        text-align: center;
-        padding: 0;
-    }
-    .heading h2 {
-        text-align: center;
-    }
-    .service-inner {
-        width: 900px;
-        padding: 0 100px;
-    }
+    
+    
 }
