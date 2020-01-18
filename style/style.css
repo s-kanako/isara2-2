@@ -3,8 +3,9 @@
 .container {
     padding: 0 100px;
     margin: 0;
-    max-width: 100%;
+    width: 100%;
     font-family: 'YuGothic';
+    color: #333333;
 }
 
 header {
@@ -36,6 +37,7 @@ header {
     background-color: #109954;
     color: #fff;
     font-size: 18px;
+    margin-right: 10px;
 }
 .btn3 {
     width:222px;
@@ -71,24 +73,39 @@ header {
     font-size: 18px;
 }
 
+
+/* mv */
+
 .mv {
-    margin: 106px 0 120px 0;
     display: flex;
-    justify-content: center;
-    width: 1080px;
+    justify-content: space-between;
 }
-.mv-ttl h2{
+.mv-left {
+    margin-top: 233px;
+}
+
+.mv-left h2{
     font-weight: bold;
+    font-size: 36px;
+    width: 504px;
+}
+.mv-left p {
+    margin: 35px 0 40px 0;
+    font-size: 16px;
+    width: 400px;
 }
 .mv img{
-    width: 71%;
+    width: 45%;
+    margin: 90px 0 120px 0;
 }
 
-/* service */
 
 .inner {
-    width: 1080px;
+    width: 100%;
 }
+/* service */
+
+
 .service-img {
     display: flex;
     justify-content: space-between;
@@ -127,24 +144,32 @@ header {
     display: flex;
     justify-content: space-between;
 }
-.about-upper {
+.about-upper,.about-bottom  {
     margin: 100px 70px;
 }
 .about-bottom {
     margin-bottom: 120px;
 }
-.about-img img{
-    width: 450px;
+.about-inner img{
+    width: 41%;
 }
-.about-txt {
-    
-}
+
 .about-txt p{
     font-size: 16px;
     width: 450px;
+    margin-bottom: 30px;
+}
+
+.about-txt {
+    margin-right: 40px;
 }
 .about-txt h2 {
     color: #109954;
+    margin-bottom: 30px;
+}
+.about-bottom img + .about-txt {
+    margin-left: 30px;
+    margin-right: none;
 }
 
 
@@ -185,18 +210,65 @@ article h2 {
     margin-bottom: 115px;
 }
 
+
+/* footer */
+
+
 footer {
     height: 135px;
     background-color: #E8E8E8;
     max-width: 100%;
+}
+
+.footer-logo {
     display: flex;
     justify-content: space-between;
+    padding: 0 100px;
 }
 
 .footer-logo img{
     width: 70px;
+    margin-top: 25px;
+}
+
+ul {
+    display: flex;
+    margin-top: 50px;
+}
+
+li {
+    list-style: none;
+    height: 20px;
+}
+
+/* * 隣接セレクタ * */
+li+ li {
+    border-left: 1px solid #333;
+}
+
+a {
+    margin: 0 18px;
+    color: #333;
+}
+.footer-logo a{
+    font-size: 14px;
+    text-decoration: none;
 }
 
 small {
     text-align: center;
+    font-size: 14px;
+}
+
+
+
+
+/* resposible */
+
+
+
+@media (max-width: 1024px) {
+    .container {
+        padding: 0 50px;
+    }
 }
