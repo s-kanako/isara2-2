@@ -1,5 +1,4 @@
 
-
 .container {
     margin: 0;
     width: 100%;
@@ -14,7 +13,6 @@ header {
     display: flex;
     justify-content: space-between;
     margin-top: 18px;
-
 }
 
 /* 共有しているclass */
@@ -22,7 +20,6 @@ header {
     border-radius: 30px;
 }
 .btn1 {
-    
     background-color: #FFE000;
     border: none;
 }
@@ -87,7 +84,6 @@ header {
 }
 
 /**** service *****/
-
 
 
 .heading {
@@ -539,11 +535,12 @@ small {
         padding: 0px 16px;
     }
 
-
 }
 
 
-@media screen and (max-width: 375px) {
+
+
+@media screen and (max-width: 767px) {
 
     .container {
         padding: 0 15px;
@@ -595,13 +592,13 @@ small {
         flex-direction: column;
         text-align: center;
         padding: 0 5px;
-        width: 370px;
+        width: 100%;
     }
     .service-inner img {
         width: 200px;
     }
     .about-inner {
-        width: 375px;
+        width: 100%;
         padding: 0;
     }
     .about-inner img {
@@ -633,7 +630,7 @@ small {
     }
 
     .news-inner {
-        width: 349px;
+        width: 100%;
         margin-top: 80px;
         padding: 0;
     }
@@ -690,4 +687,16 @@ small {
     }
     
     
+}
+
+@media screen and (max-width: 411px ) {
+    .service-inner {
+        width: 370px;
+    }
+    .about-inner {
+        width: 375px;
+    }
+    .news-inner {
+        width: 349px;
+    }
 }
