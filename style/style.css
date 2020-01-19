@@ -47,11 +47,8 @@ header {
     background-color: #fff;
 }
 .btn4 , .btn5 {
-    width: 120px;
     background-color:  #109954;
     color: #fff;
-    font-size: 16px;
-    height: 36px;
     border: none;
 }
 .btn6 {
@@ -66,6 +63,7 @@ header {
     background-color: #109954;
     color: #fff;
     font-size: 18px;
+    border: none;
 }
 
 
@@ -78,28 +76,17 @@ header {
 .mv-left {
     margin-top: 233px;
 }
-
 .mv-left h2{
     font-weight: bold;
-    font-size: 36px;
-    /* width: 504px; */
 }
 .mv-left p {
     margin: 35px 0 40px 0;
-    font-size: 16px;
-    width: 400px;
 }
 .mv img{
-    width: 45%;
     margin-top: 90px;
 }
 
-
-.inner {
-    width: 1080px;
-    height: 100%;
-}
-/* service */
+/**** service *****/
 
 
 
@@ -123,7 +110,6 @@ header {
 }
 
 .service-inner {
-    padding:0 140px;
     display: flex;
     justify-content: space-between;
 }
@@ -140,13 +126,17 @@ header {
 
 
 /* about */
+.about-inner {
+    padding: 0 70px;
 
+}
 
 .about-upper , .about-bottom {
     display: flex;
-    justify-content: space-between;
-    margin: 0 70px 100px 70px;
-    
+    justify-content: space-between; 
+}
+.about-upper {
+    margin-bottom: 100px;
 }
 
 .about-bottom {
@@ -158,7 +148,7 @@ header {
 
 .about-txt p{
     font-size: 16px;
-    width: 450px;
+    
     margin-bottom: 30px;
 }
 
@@ -167,7 +157,7 @@ header {
     margin-bottom: 30px;
 }
 
-/* blog  */
+/**** blog  ******/
 
 
 .news-inner {
@@ -191,6 +181,8 @@ article .link {
 
 hr {
     margin: 30px 0;
+    border: 1px solid #D6D6D6;
+    background-color: #D6D6D6;
 }
 
 .blog-date {
@@ -209,7 +201,6 @@ figure img{
     width: 64%;
 }
 article h2 {
-    font-size: 16px;
     margin: 20px 0 ;
 }
 
@@ -219,13 +210,14 @@ article h2 {
 }
 
 
-/* footer */
+/**** footer *****/
 
 
 footer {
     height: 135px;
     background-color: #E8E8E8;
     max-width: 100%;
+    
 }
 
 .footer-logo {
@@ -235,7 +227,6 @@ footer {
 }
 
 .footer-logo img{
-    width: 70px;
     margin-top: 25px;
 }
 
@@ -262,9 +253,12 @@ a {
     font-size: 14px;
     text-decoration: none;
 }
+.footer-txt {
+    text-align: center;
+    
+}
 
 small {
-    text-align: center;
     font-size: 14px;
 }
 
@@ -290,6 +284,8 @@ small {
     .btn1 {
         width: 300px;
         height: 60px;
+        font-size: 25px;
+
     }
     .mv {
         padding: 0 200px;
@@ -315,7 +311,6 @@ small {
     .service-inner p {
         font-size: 30px;
     }
-
     .about-inner p {
         width: 800px;
         font-size: 30px;
@@ -330,6 +325,9 @@ small {
         width: 163px;
         font-size: 28px;
         height: 62px;
+    }
+    .news-inner {
+        width: 2160px;
     }
     figure img {
         width: 100%;
@@ -371,7 +369,65 @@ small {
     }
     .btn1 {
         width: 151px;
-    font-size: 18px;
+        font-size: 18px;
+        font-size: 18px;
+        height: 48px;
+        width: 151px;
+    }
+    .mv {
+        padding: 0;
+    }
+    .mv-left h2 {
+        font-size: 36px;
+    }
+    .mv-left p {
+        font-size: 16px;
+    width: 400px;
+    }
+    .mv img {
+        width: 54%
+    }
+    .service-inner {
+        max-width: 100%;
+        width: 1242px;
+        padding:0 140px;
+
+    }
+    .service-inner img {
+        width: 200px;
+    }
+    .service-inner p {
+        font-size: 20px;
+    }
+
+    .about-inner {
+        width: 1242px;
+        padding: 0 70px;
+    }
+    .about-inner p {
+        width: 450px;
+        font-size: 16px;
+    }
+    .btn4 {
+        width: 120px;
+        font-size: 16px;
+        height: 36px;
+    }
+    .about-txt h3 {
+        font-size: 36px;
+    }
+    .btn5 {
+        width: 120px;
+        font-size: 16px;
+        height: 36px;
+        
+    }
+
+    .news-inner {
+        width: 1242px;
+    }
+    time {
+        font-size: 16px;
     }
     .btn6 {
         width: 106px;
@@ -379,17 +435,47 @@ small {
         font-size: 14px;
     }
 
+    .blog-txt h2 {
+        font-size: 16px;
+    }
+    .blog-txt p {
+        font-size: 16px;
+    }
+
+    footer {
+        height: 135px;
+    }
+    .footer-logo img {
+        width: 70px;
+    }
+    .footer-logo a {
+        font-size: 1px;
+    }
+
 }
+
+@media screen and (max-width: 1280px ){
+    .service-inner {
+        width: 1080px;
+        max-width: 100%;
+    }
+
+    .about-inner {
+        width: 1080px;
+        max-width: 100%;
+    }
+    .news-inner {
+        width: 1080px;
+
+    }
+}
+
 
 
 
 @media screen and (max-width: 1024px) {
     .container {
         padding: 0 50px;
-    }
-
-    .inner {
-        width: 900px;
     }
     .heading {
         text-align: center;
@@ -399,12 +485,17 @@ small {
         text-align: center;
     }
     .service-inner {
-        width: 900px;
+        width: 925px;
         padding: 0 100px;
     }
-    .abput-upper,.about-bottom {
-        margin: 0 40px 100px 40px;
+    .about-inner {
+        width: 925px;
+        padding: 0 20px;
     }
+    .news-inner {
+        width: 925px;
+    }
+    
 }
 
 
@@ -412,21 +503,34 @@ small {
     .container {
         padding: 0 20px;
     }
-    .inner {
-        width: 700px;
+    .mv-left {
+        margin-top: 100px;
+    }
+    .mv-left h2 {
+        font-size: 30px;
+    }
+    .mv img {
+        width: 47%;
     }
     .section-ttl{
         font-size: 30px;
     }
     .service-inner {
-        width: 700px;
-        padding: 0;
+        width: 728px;
+        padding: 0 17px;
     }
     .service-inner img {
         width: 180px;
     }
+    .about-inner {
+        width: 728px;
+        padding: 0 17px;
+    }
     .about-txt p {
         width: 311px;
+    }
+    .news-inner {
+        width: 728px;
     }
     figure img {
         width: 100%;
@@ -437,6 +541,7 @@ small {
 
 
 }
+
 
 @media screen and (max-width: 375px) {
 
@@ -492,10 +597,12 @@ small {
         padding: 0 5px;
         width: 370px;
     }
-    
-
     .service-inner img {
         width: 200px;
+    }
+    .about-inner {
+        width: 375px;
+        padding: 0;
     }
     .about-inner img {
         width: 100%;
@@ -507,12 +614,15 @@ small {
     }
     .about-bottom {
         flex-direction: column;
-        display: block;
-        margin: 0;
+        text-align: center;
     }
     .about-txt {
         margin: 0 0 30px 0;
-        text-align: center;
+        text-align: left;
+    }
+    .btn4,.btn5 {
+        position: relative;
+        display: inline-block;
     }
     .about-txt h3 {
         text-align: left;
@@ -523,8 +633,9 @@ small {
     }
 
     .news-inner {
-        margin-top: 100px;
-        padding: 0 26px;
+        width: 349px;
+        margin-top: 80px;
+        padding: 0;
     }
     
     
@@ -532,8 +643,12 @@ small {
         display: block;
         flex-direction: column;
     }
+    article .link {
+        margin: 0;
+    }
     figure img {
-        width: 100%;
+        width: 86%;
+        margin: 18px 23px;
     }
     time {
         margin-right: 0;
@@ -542,8 +657,8 @@ small {
         width: 100px;
     }
     .btn7 {
-        width: 266px;
-        height: 78px;
+        width: 166px;
+        height: 48px;
     }
 
     footer {
